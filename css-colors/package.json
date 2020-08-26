@@ -1,0 +1,13 @@
+{
+  "name": "css-colors",
+  "version": "1.0.0",
+  "description": "CSS Color Names",
+  "scripts": {
+    "build": "eleventy --input=src"
+  },
+  "author": "Iván Barcia <ivan@barcia.dev> (https://barcia.dev/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}

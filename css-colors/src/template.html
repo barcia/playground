@@ -1,0 +1,59 @@
+---
+permalink: index.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Color Names</title>
+    <style>
+        body {
+            margin: 8px;
+            font-family: monospace;
+        }
+        .meta {
+            padding: 20px 0 80px;
+        }
+        .color-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            gap: 8px;
+        }
+        .color {
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .color-name {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Colors</h1>
+    <div class="meta">
+        <p>By Iván Barcia.</p>
+        <p><a href="https://github.com/barcia/css-colors">github.com/barcia/css-colors</a></p>
+    </div>
+    <ul class="color-list">
+        {% for color in colors %}
+            {% for data in color %}
+            <li>
+                <div class="color" style="background-color: {{data[1]}}">
+                    <span class="color-name">{{data[0]}}: {{data[1]}}</span>
+                </div>
+            </li>
+            {% endfor %}
+
+        {% endfor %}
+    </ul>
+</body>
+</html>

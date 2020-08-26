@@ -1,0 +1,25 @@
+.body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.sectiontitle {
+    background-color: steelblue;
+    color: white;
+    font-size: 2.4rem;
+    font-family: monospace;
+    display: block;
+    padding: 8px 12px;
+    margin: 56px 0 12px;
+}
+
+.title {
+    background-color: lightsteelblue;
+    color: white;;
+    font-size: 1.6rem;
+    font-family: monospace;
+    display: block;
+    padding: 6px 12px;
+    margin: 48px 0 16px;
+}

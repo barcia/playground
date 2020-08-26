@@ -1,0 +1,32 @@
+<span class="title">Dialog</span>
+
+<button id="myDialog-trigger">Open dialog</button>
+<button id="myDialog-triggerModal">Open dialog as modal</button>
+
+<dialog id="myDialog">
+    <h3 style="margin: 0;">Modal title</h3>
+    <p>This is a modal</p>
+    <input type="text">
+    <button id="myDialog-close">close</button>
+</dialog>
+
+
+
+<script>
+    const trigger = document.querySelector('#myDialog-trigger');
+    const modal = document.querySelector('#myDialog-triggerModal');
+    const close = document.querySelector('#myDialog-close');
+    const dialog = document.querySelector('#myDialog');
+
+    trigger.addEventListener('click', function() {
+        dialog.show();
+    })
+
+    modal.addEventListener('click', function() {
+        dialog.showModal();
+    })
+
+    close.addEventListener('click', function() {
+        dialog.close();
+    })
+</script>
